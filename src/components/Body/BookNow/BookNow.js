@@ -5,6 +5,7 @@ import axios from "axios";
 import Spinner from '../Spinner/Spinner';
 import { Modal, ModalBody } from "reactstrap";
 import { connect } from 'react-redux';
+//import { update } from "../../../redux/actionCreators";
 
 const mapStateToProps = state => {
     return {
@@ -12,6 +13,13 @@ const mapStateToProps = state => {
         token: state.token,
     }
 }
+// const mapDispatchToProps = dispatch => {
+//     return {
+//         update: (roomId, title, price, available, category, image) => dispatch(update(
+//             roomId, title, price, available, category, image
+//         )),
+//     }
+// }
 
 class BookNow extends Component {
 
@@ -48,6 +56,18 @@ class BookNow extends Component {
                         isModalOpen: true,
                         modalMessage: "Room Booked Succesfully!",
                     });
+                    // this.props.update(room.room.roomId, room.room.title, room.room.price,
+                    //     room.room.available - 1, room.room.category, room.room.image);
+                    // const curRoom = JSON.stringify({
+                    //     roomId: room.room.roomId,
+                    //     title: room.room.title,
+                    //     price: room.room.price,
+                    //     available: room.room.available - 1,
+                    //     category: room.room.category,
+                    //     image: room.room.image,
+                    //     id: room.room.roomId,
+                    // })
+
                 } else {
                     this.setState({
                         isLoading: false,

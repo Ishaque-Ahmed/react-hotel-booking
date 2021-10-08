@@ -93,3 +93,17 @@ export const fetchBookings = (token, userId) => dispatch => {
         .catch(error => dispatch(bookingsFailed()));
 
 }
+
+// export const update = (roomId, title, price, available, category, image) => {
+//     const room = {
+//         roomId: roomId,
+//         title: title,
+//         price: price,
+//         available: available,
+//         category: category,
+//         image: image,
+//     }
+//     axios.post("http://localhost:3001/featured", room)
+//         .then(response => console.log(response.data))
+//         .catch(err => console.log(err));
+// }
