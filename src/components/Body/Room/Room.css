@@ -1,0 +1,9 @@
+.element {
+    font-weight: bold;
+    font-size: 20px;
+    color: #dcdde1;
+    background-color:#353b48;
+    padding: 10px;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
